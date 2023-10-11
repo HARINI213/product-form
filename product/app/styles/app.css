@@ -1,0 +1,9 @@
+.product{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.action{
+    display: flex;
+    justify-content: space-evenly;
+}

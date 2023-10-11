@@ -1,0 +1,35 @@
+
+<div class="container product" >
+  <div class="row justify-content-center align-items-center" style="width: 100%;">
+    <div class="col-lg-6">
+      <div class="card">
+              
+        <div class="card-body">
+              <div class="card-title">
+                    <h4>Product Information</h4>
+                </div>
+
+          <form {{on "submit" this.saveProduct}}>
+            <div class="form-group">
+              <label for="productName">Product Name:</label>
+              {{input type="text" class="form-control" id="productName" value=this.productName}}
+            </div>
+            <div class="form-group">
+              <label for="productDescription">Product Description</label>
+              {{input type="text" class="form-control" id="productDescription" value=this.productDescription}}
+            </div>
+            <div class="form-group">
+              <label for="productQuantity">Quantity:</label>
+              {{input type="number" class="form-control" id="productQuantity" value=this.productQuantity}}
+            </div>
+            <div class="form-group">
+              <label for="productPrice">Price:</label>
+              {{input type="number" class="form-control" id="productPrice" value=this.productPrice}}
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 8px;">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
